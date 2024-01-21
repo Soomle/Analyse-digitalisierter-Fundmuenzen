@@ -1,2 +1,0 @@
-12.01.2024 Guozheng Zhao
-Ausgabefehler in Version 1 aufgrund der Bildgröße behoben
