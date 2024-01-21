@@ -39,3 +39,7 @@ Dieser Teil des Codes ist hauptsächlich für das Sammeln und Vorverarbeiten von
    - Falls das Bild gültig ist, extrahiert es Merkmale mit dem VGG16-Modell und erkundet und zeigt das verarbeitete Bild mit `explore_features` und `visualize_image`.
   
 Die möglichen Probleme im Code sind falsche Vorverarbeitung der Bilder und nicht abgestimmte Modellgewichte, die zu Nullen in den Feature-Matrizen führen, sowie eine potenzielle fehlerhafte Normalisierung oder Skalierung, die das Auftreten eines schwarzen Bildes verursachen kann.
+
+12.01.2024  Guozheng Zhao
+V2:
+Ausgabefehler in Version 1 aufgrund der Bildgröße behoben
