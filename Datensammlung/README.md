@@ -41,5 +41,12 @@ Dieser Teil des Codes ist hauptsächlich für das Sammeln und Vorverarbeiten von
 Die möglichen Probleme im Code sind falsche Vorverarbeitung der Bilder und nicht abgestimmte Modellgewichte, die zu Nullen in den Feature-Matrizen führen, sowie eine potenzielle fehlerhafte Normalisierung oder Skalierung, die das Auftreten eines schwarzen Bildes verursachen kann.
 
 12.01.2024  Guozheng Zhao
-V2:
-Ausgabefehler in Version 1 aufgrund der Bildgröße behoben
+Code Enhancements V2:
+1.Image normalization:
+
+   -We improved the image normalization method to accommodate images with different pixel value ranges. Now, images are normalized to the    
+   range    from 0 to 1.
+
+2.Comments and readability:
+
+   -We added more comments to make the code easier to understand and use.
