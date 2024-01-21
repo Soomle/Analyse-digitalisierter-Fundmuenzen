@@ -1,3 +1,5 @@
+09.01.2024  Shiming Wei
+
 Dieser Teil des Codes ist hauptsächlich für das Sammeln und Vorverarbeiten von Daten zuständig.
 
 1. Importieren von notwendigen Bibliotheken:
