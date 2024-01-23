@@ -1,0 +1,24 @@
+import os
+import cv2
+import numpy as np
+from scipy.spatial import ConvexHull
+from skimage.measure import label, regionprops
+from skimage.feature import canny
+from skimage.morphology import closing, square
+
+ordner = 'C:\\Users\\chuin\\OneDrive\\Desktop\\Mehl-595\\Mehl-595'
+
+# Erstellung von Ordnern
+for subfolder in ['vollemünze', 'kaputtemünze']:
+    if not os.path.exists(os.path.join(ordner, subfolder)):
+        os.makedirs(os.path.join(ordner, subfolder))
+
+# Durchgehen jedes einzelnen Bildes im Ordner
+for datei in os.listdir(ordner):
+    if datei.endswith('.tif'):
+        bild = cv2.imread(os.path.join(ordner, datei), cv2.IMREAD_GRAYSCALE)
+
+        kanten = canny(bild)
+
+        # Äußere Kontur Extraktion mit dem Befehl 'noholes'
+        label_image = label(closing
