@@ -50,3 +50,11 @@ Code Enhancements V2:
 2.Comments and readability:
 
    -We added more comments to make the code easier to understand and use.
+
+
+
+02.02.2024 Shiming Wei
+
+Beschreibung von Münzklassifizierung_mit_ResNet50
+
+Da die Genauigkeit von VGG16 zu gering war, habe ich es durch ResNet50 ersetzt. TensorFlow und Keras wurden zum Laden des ResNet50-Modells und zur Merkmalsextraktion verwendet.
