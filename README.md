@@ -9,7 +9,7 @@ Vorverarbeitung:
 Dieser Ordner sollte Skripte oder Funktionen enthalten, die die Bilder für die Merkmalsextraktion vorbereiten, indem verschiedene Operationen wie Zuschneiden, Skalieren, Konvertieren, Filtern usw. durchgeführt werden.
 
 Merkmalsextraktion: 
-Dieser Ordner sollte Skripte oder Funktionen enthalten, die die ausgewählten Merkmale aus den Bildern extrahieren, zu denen Form, Farbe, Textur, Kanten usw. gehören können.
+Merkmalsextraktion: Dieser Ordner sollte Skripte oder Funktionen enthalten, die die ausgewählten Merkmale aus den Bildern extrahieren, zu denen Form, Farbe, Textur, Kanten usw. gehören können. Insbesondere beinhaltet er das Skript "ModelGeneration.py", das für die Generierung eines Modells aus einer Reihe von Bildern durch Extraktion und Nutzung dieser Merkmale zuständig ist.
 
 Klassifizierung: 
 In diesem Ordner erstellen wir einen geeigneten Algorithmus, der die Bilder anhand ihrer Merkmale in verschiedene Kategorien einteilt, unter Verwendung mehrerer Modelle zur Klassifizierung, wie in der Datei ImageDetector.py angegeben.
