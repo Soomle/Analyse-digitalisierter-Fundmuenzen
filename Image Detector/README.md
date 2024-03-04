@@ -1,30 +1,27 @@
-Image Classification with One-Class SVM and MobileNetV2 Feature Extraction
-This project uses a machine learning approach to classify images, determining whether they belong to a specific class as defined by a One-Class SVM (Support Vector Machine) model. It leverages the MobileNetV2 model from TensorFlow's Keras applications for feature extraction.
-Prerequisites
-Before running this script, ensure you have the following installed:
-Python 3.6 or later
-TensorFlow 2.x
-NumPy
-Scikit-Learn
-Pillow (PIL Fork)
-Joblib
-If you are using Google Colab, these packages should already be available.
-Installation
-To install the required Python packages, you can use pip:
-shCopy code
-pip install numpy tensorflow scikit-learn pillow joblib
-Usage
-Prepare your One-Class SVM model: Train a One-Class SVM model on your dataset and save it using joblib.dump(). The model should be trained to distinguish images from a single class of interest from all other images.
-Upload your model and images:
-When prompted, upload your trained One-Class SVM model file (e.g., model.joblib).
-Then, upload a ZIP file containing the images you want to classify.
-Run the script: Execute the script in your Python environment. If using Google Colab, simply run the cells in order.
-View results: The script will print out each image's file name, whether it belongs to the model's class, and the decision function score.
-Customization
-You can adjust the custom_threshold variable to change how strict the classifier is. A lower threshold value means the model is less likely to reject images.
+ImageDetector.py 
+
+Overview
+`ImageDetector.py` is an image classification application that enables the use of multiple pre-trained models to classify a given image. It provides a graphical user interface for users to upload models and an image, and then displays the classification results from each model.
+
 Features
-Model Upload: Upload your own trained One-Class SVM model.
-Image Processing: Automatically resizes and preprocesses images for MobileNetV2 compatibility.
-Feature Extraction: Uses MobileNetV2 for robust feature extraction.
-Custom Threshold: Allows for adjusting the sensitivity of the classifier.
-Batch Prediction: Classifies a batch of images by processing a ZIP file upload.
+- **Model Upload**: Allows the uploading of multiple pre-trained classification models.
+- **Image Upload**: Users can upload an image that they want to classify.
+- **Classification Results**: Displays the classification results for the uploaded image from each loaded model.
+
+Requirements
+- Python 3.x
+- Libraries: Refer to `requirements.txt` for a list of required Python libraries.
+
+Installation
+Ensure Python 3.x is installed on your system. Then, install the necessary libraries using the following command:
+```
+pip install -r requirements.txt
+```
+
+Usage
+1. Launch the script with Python by typing `python ImageDetector.py` in your terminal or command line.
+2. Follow the instructions in the graphical interface to upload models and an image for classification.
+3. View the classification results provided by each model for the uploaded image.
+
+Contributing
+Contributions are welcome. Please create a pull request or open an issue if you have suggestions for improvements or have found bugs.
