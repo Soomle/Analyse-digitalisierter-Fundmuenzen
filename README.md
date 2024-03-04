@@ -5,6 +5,9 @@ Das Ziel ist es, eine effektive Methode zur Kategorisierung von Bildern anhand v
 Datensammlung: 
 Dieser Ordner sollte Bildmaterial für die Analyse enthalten, das eine Vielzahl von Bildern umfassen kann, nicht nur Münzen.
 
+Image Detector:
+Dieser Ordner sollte das Skript "ImageDetector.py" enthalten, das für die Klassifizierung von Bildern anhand der Merkmale, die durch die im Ordner Merkmalsextraktion definierten Skripte und Funktionen extrahiert wurden, verantwortlich ist. Es ermöglicht die Verwendung mehrerer Modelle, um die Bilder in verschiedene Kategorien einzuteilen, basierend auf den erkannten Unterschieden in Farbe, Form, Größe und Textur.
+
 Vorverarbeitung: 
 Dieser Ordner sollte Skripte oder Funktionen enthalten, die die Bilder für die Merkmalsextraktion vorbereiten, indem verschiedene Operationen wie Zuschneiden, Skalieren, Konvertieren, Filtern usw. durchgeführt werden.
 
