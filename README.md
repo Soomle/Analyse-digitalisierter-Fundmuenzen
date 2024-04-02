@@ -1,30 +1,20 @@
 # Analyse digitalisierter mittelalterlicher Fundmünzen
 
-Das Ziel ist es, eine effektive Methode zur Kategorisierung von Bildern anhand visueller Merkmale zu entwickeln. Wir streben danach, ein Modell zu erstellen, das in der Lage ist, Unterschiede in Farbe, Form, Größe und Textur zu erkennen und diese Merkmale zu nutzen, um Bilder in verschiedene Kategorien einzuteilen.
+"CoinVision: Coin Image Classifier & Trainer" is a comprehensive software application designed for the analysis and classification of digitalized medieval coin images. The goal of this system is to develop an efficient method for categorizing images based on visual characteristics such as color, shape, size, and texture. CoinVision aims to create a model that can discern these differences and use them to sort images into various categories.
 
-Datensammlung: 
-Dieser Ordner sollte Bildmaterial für die Analyse enthalten, das eine Vielzahl von Bildern umfassen kann, nicht nur Münzen.
+The software is structured into several key components that work seamlessly together:
 
-Image Detector:
-Dieser Ordner sollte das Skript "ImageDetector.py" enthalten, das für die Klassifizierung von Bildern anhand der Merkmale, die durch die im Ordner Merkmalsextraktion definierten Skripte und Funktionen extrahiert wurden, verantwortlich ist. Es ermöglicht die Verwendung mehrerer Modelle, um die Bilder in verschiedene Kategorien einzuteilen, basierend auf den erkannten Unterschieden in Farbe, Form, Größe und Textur.
+Data Collection: Users can upload a ZIP file containing a diverse set of images for analysis. The application is not limited to coin images and can handle a wide range of visual materials.
 
-Vorverarbeitung: 
-Dieser Ordner sollte Skripte oder Funktionen enthalten, die die Bilder für die Merkmalsextraktion vorbereiten, indem verschiedene Operationen wie Zuschneiden, Skalieren, Konvertieren, Filtern usw. durchgeführt werden.
+Image Processing: CoinVision includes a preprocessing module that prepares images for feature extraction through operations such as cropping, scaling, converting, and filtering. This step ensures that the images are optimized for the subsequent feature extraction process.
 
-Merkmalsextraktion: 
-Dieser Ordner sollte Skripte oder Funktionen enthalten, die die ausgewählten Merkmale aus den Bildern extrahieren, zu denen Form, Farbe, Textur, Kanten usw. gehören können. Insbesondere beinhaltet er das Skript "ModelGeneration.py", das für die Generierung eines Modells aus einer Reihe von Bildern durch Extraktion und Nutzung dieser Merkmale zuständig ist.
+Feature Extraction: The application utilizes scripts and functions to extract relevant features from the images, including shape, color, texture, and edges. These features are then used to train a model that can recognize and classify images based on these visual characteristics.
 
-Klassifizierung: 
-In diesem Ordner erstellen wir einen geeigneten Algorithmus, der die Bilder anhand ihrer Merkmale in verschiedene Kategorien einteilt, unter Verwendung mehrerer Modelle zur Klassifizierung, wie in der Datei ImageDetector.py angegeben.
+Model Training and Generation: CoinVision incorporates a model training component that allows users to generate a OneClassSVM model using the extracted features from a series of images. The trained model is then saved to a specified location for future use in classifying new images.
 
-Modellgenerierung: 
-Anstelle eines Sortiersystems sollte ein System entworfen werden, wie in der Datei ModelGeneration.py beschrieben, um Modelle aus einer Reihe von Bildern zu generieren, die dann zur Klassifizierung neuer Bilder verwendet werden können.
+Classification: The core of CoinVision is its classification module, which uses the trained models to categorize uploaded images. Users can load multiple models and compare their classification results, providing a robust system for analyzing and understanding the visual content of the images.
 
+User Interface: CoinVision features a graphical user interface (GUI) that allows users to interact with the application easily. Through the GUI, users can upload images and models, initiate the training process, and view classification results. The interface also includes functionalities for saving the results in HTML format and accessing help and usage instructions.
 
-
-Hinweis:
-
-"ModelGeneration.exe" generiert ein Modell aus einer Reihe von Bildern, indem es den Benutzern ermöglicht, eine ZIP-Datei mit Bildern hochzuladen. Das Programm extrahiert Merkmale aus den Bildern, trainiert ein OneClassSVM-Modell mit diesen Merkmalen und speichert das Modell dann an einem bestimmten Ort. Die Benutzer können über eine grafische Schnittstelle die ZIP-Datei hochladen und den Speicherort für das Modell auswählen.
-
-"ImageDetector.exe" ist eine Anwendung zur Bilderkennung, die es dem Benutzer ermöglicht, mehrere Modelle und ein Bild hochzuladen, um das Bild mithilfe der hochgeladenen Modelle zu klassifizieren. Die Benutzer können über eine grafische Schnittstelle Modelle und das Bild hochladen und dann die Klassifizierungsergebnisse der einzelnen Modelle anzeigen.
+CoinVision represents a unified solution for historical numismatic analysis, combining advanced computer vision and machine learning techniques to provide a practical tool for researchers and enthusiasts alike.
 
